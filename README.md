@@ -1,70 +1,96 @@
-# Getting Started with Create React App
+# NetSathi – Voice Companion for Seniors
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Product Requirements Document (PRD)
 
-## Available Scripts
+**Purpose:**  
+NetSathi is a voice-based mobile/web application designed to help seniors in India stay informed about fraudulent scams, misinformation, and fake videos. The app acts as a friendly companion, answering questions and providing guidance using natural voice interactions.
 
-In the project directory, you can run:
+**Target Audience:**  
+- Seniors (age 55+) in India  
+- Users with limited technical skills  
+- Users who prefer voice-based interaction over text  
 
-### `npm start`
+**Key Features:**  
+1. **Voice Interaction:**  
+   - Voice-based Q&A in English, Hindi, and regional languages  
+   - Text-to-speech and speech-to-text support  
+2. **Scam & Misinformation Alerts:**  
+   - Real-time updates about trending scams, fake news, and viral misinformation  
+   - Simple explanations and actionable advice  
+3. **Fake Video/Image Detection Guidance:**  
+   - Users can describe or upload suspicious content for analysis  
+   - The app provides guidance on authenticity and next steps  
+4. **Friendly Conversational Experience:**  
+   - Empathetic, patient responses  
+   - Reminders, greetings, and check-ins  
+5. **Accessibility:**  
+   - Large buttons, clear fonts, high-contrast UI  
+   - Minimal navigation steps  
+6. **Privacy & Security:**  
+   - No sensitive data stored without consent  
+   - Clear privacy policy and permissions  
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+**Success Metrics:**  
+- Number of active users  
+- Number of scam/misinformation alerts delivered  
+- User satisfaction  
+- Reduction in scam incidents reported by users  
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+**Technical Requirements:**  
+- Cross-platform (Android/iOS/web)  
+- Speech-to-text and text-to-speech APIs  
+- Backend for content updates and user queries  
+- Multilingual support  
 
-### `npm test`
+**Out of Scope (MVP):**  
+- In-depth fact-checking of every user-uploaded video/image  
+- Social media integration  
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+---
 
-### `npm run build`
+## Task Breakdown
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+1. **Project Setup**
+   - Initialize project repository (Git)
+   - Set up frontend framework (React with TypeScript + Tailwind CSS)
+   - Set up backend (Node.js/Express or Firebase)
+   - Configure ESLint, Prettier, and basic CI
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+2. **Voice Interaction**
+   - Integrate speech-to-text (STT) API
+   - Integrate text-to-speech (TTS) API
+   - Build a simple voice input/output UI component
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+3. **Scam & Misinformation Alerts**
+   - Design backend structure for scam alerts
+   - Create frontend components to display alerts
+   - Set up admin interface for content updates (optional for MVP)
 
-### `npm run eject`
+4. **Fake Video/Image Detection Guidance**
+   - Allow users to describe or upload suspicious content
+   - Provide simple guidance or connect to a fact-checking API
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+5. **Conversational Experience**
+   - Implement friendly chatbot logic
+   - Add greetings, reminders, and empathetic responses
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+6. **Accessibility & UI**
+   - Design large, clear, high-contrast UI components
+   - Ensure minimal navigation and easy-to-use interface
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+7. **Multilingual Support**
+   - Add support for Hindi and at least one regional language
+   - Localize UI and voice responses
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+8. **Privacy & Security**
+   - Draft and display a clear privacy policy
+   - Ensure no sensitive data is stored without consent
 
-## Learn More
+9. **Testing & Feedback**
+   - Write unit and integration tests
+   - Conduct user testing with seniors
+   - Collect and incorporate feedback
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+---
 
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+_Keep this section updated as the project evolves!_
